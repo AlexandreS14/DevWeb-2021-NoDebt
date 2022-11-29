@@ -1,7 +1,0 @@
-Profil 1 :
-email = alexterieur@gmail.com
-mdp = 123
-
-Profil 2 :
-email = aligator@gmail.com
-mdp = 123
