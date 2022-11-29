@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+/************************* Disposition de base de la page *********************/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: auto;
+	display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+/**********************main de toute les pages*************************/
+main {
+	flex-grow: 1;
+  	align-items: flex-start;
+}
+/******************************* Disposition header pour toute les pages ********************/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10%;
+	background-color: #23272a;
+}
+header .logo {
+	font-weight: 700;
+	font-size: 2em;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+}
+.menu {
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0.625em 0;
+}
+.menu li {
+	list-style: none;
+	display: inline-block;
+}
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	border-radius: 0.313em;
+	padding: 0.313em 0.938em;
+	margin-left: 1.563em;
+}
+.menu li a:hover {
+	background-color: #6495ED;
+	color: #000;
+}
+header nav .menu a {
+	color: #fff;
+	text-decoration: none;
+}
+header nav .menu a:hover {
+	color: #000;
+}
+i {
+	margin: 0.313em;
+}
+/********************************* Page contacter *******************************/
+.contactIm {
+	background-image: url("../img/contacte.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.containerCa {
+	width: 25em;
+	margin: auto;
+	margin-top: 6%;
+	border: 1px solid silver;
+	background-color: #6495ED;
+	border-radius: 0.313em;
+}
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.form h1 {
+	text-align: center;
+	font-size: 2.2rem;
+	margin-top: 1.25em;
+	color: #000000;
+}
+.contactNous {
+	margin-top: 1.25em;
+	padding-top: 0.938em;
+	padding-bottom: 0.938em;
+	padding-left: 0.938em;
+	padding-right: 6.25em;
+	border-radius: 0.313em;
+	border: 0.063em solid #23272a;
+	resize: none;
+}
+.buttonEnvoyer{
+	width: 72%;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	border: 0.063em solid black;
+	border-radius: 0.313em;
+	font-weight: bold;
+	background-color: #000;
+	color: #fff;
+}
+.buttonEnvoyer:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+}
+.buttonEnvoyer:active{
+	color: #6495ED;
+}
+/********************fil d'arianne***************************************/
+.filArianne {
+	margin: 0.625em;
+	background-color: #F5F5F7;
+	padding: 0.625em;
+	font-family: sans-serif;
+	border-radius: 0.313em;
+}
+.filArianne-items {
+	display: inline-block;
+}
+.filArianne-items:not(:last-of-type)::after {
+	content: '/';
+	margin: 0 0.313em;
+	color: #cccccc;
+}
+.filArianne-lien {
+	text-decoration: none;
+	color: #999999;
+}
+.filArianne-lien:hover {
+	text-decoration: underline;
+}
+.filArianne-lien--active {
+	color: #6495ED;
+	font-weight: 500;
+}
+/********************Footer de toute les pages *********************************/
+footer {
+	background-color: #23272a;
+	color: #ffffff;
+	padding: 1.875em;
+}
+footer a {
+	color: #6495ED;
+	text-decoration: none;
+	margin: 0.313em;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+/***************************** titre de bienvenu******************************/
+.bienvenue-titre {
+	text-align: center;
+	color: #23272a;
+	flex-wrap: wrap;
+	font-family: 'Lobster Two', cursive;
+	font-size: 5em;
+	margin-top: 1.25em;
+}
+/*****************************Page de connexion******************************/
+.containerCo {
+	width: 37.5em;
+	margin: auto;
+	margin-top: 2%;
+	border: 1px solid silver;
+	border-radius: 0.313em;
+}
+.connexion {
+	background-color: #fff;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+	padding: 30px;
+	border-radius: 0.313em;
+}
+.connexion h1 {
+	text-align: center;
+	font-size: 3rem;
+}
+.connexionbox {
+	padding: 12px;
+	width: 65%;
+	margin: 15px;
+	border-radius: 0.313em;
+	border: 1px solid;
+	border-color: #000;
+}
+.connexionbox:hover {
+	cursor: pointer;
+	color: #6495ED;
+}
+.fondconnexion {
+	background-image: url("../img/fonddegrader.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.mdpoub {
+	margin-bottom: 10px;
+}
+.mdpoub a {
+	text-decoration: none;
+	color: #86868b;
+}
+.mdpoub a:hover {
+	text-decoration: underline;
+}
+/****************Page création de compte*************************/
+.containerIn {
+	width: 600px;
+	margin: auto;
+	margin-bottom: 1%;
+	border: 1px solid silver;
+	border-radius: 0.313em;
+}
+.inscription {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 0.313em;
+}
+.inscription h1 {
+	font-size: 50px;
+	text-align: center;
+}
+.connexionbox {
+	border-radius: 0.313em;
+	border: 1px solid;
+	padding: 12px;
+}
+/*********************Mot de passe oublié**************************/
+.inscription h4 {
+	font-size: 25px;
+}
+.inscription h5 {
+	margin-top: 15px;
+	margin-bottom: 0.313em;
+	color: #86868b;
+}
+/***********************consulter groupe tableau***********************************/
+.tabGroupe {
+	text-align: center;
+	margin-top: 7%;
+	text-transform: uppercase;
+	line-height: 95%;
+	text-rendering: geometricPrecision;
+}
+.titreRecap {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 95%;
+	text-rendering: geometricPrecision;
+}
+.tableau {
+	border-collapse: collapse;
+	border: 0.125em solid #000000;
+	margin: auto;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
+thead tr {
+	text-align: left;
+	color: #ffffff;
+	background-color: #6495ED;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+th, td {
+	padding: 0.938em 5em;
+	text-align: center;
+}
+tbody tr, td, th {
+	border: 0.063em solid #ddd;
+}
+.containerG {
+	width: 100%;
+	overflow: hidden;
+	margin: 0.30em auto;
+	padding: 1.25em 0em;
+	background-color: #f6f6f6;
+}
+.containersec ul {
+	padding: 0em;
+	margin: 0em;
+}
+.containersec ul li {
+	list-style: none;
+	float: left;
+	width: 20%;
+	height: 18.75em;
+	background: #fff;
+	margin: 1.25em 3.438em 1.25em 2.5em;
+	border: 1px solid silver;
+}
+.containersec h2 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	background-color: #6495ED;
+}
+.containersec  p {
+	margin-top: 1.25em;
+	text-align: center;
+	border: 1px solid #000000;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 0.313em;
+}
+.aRecup {
+	background-color: #C8E6C9;
+	color: #388E3C;
+	border: 1px solid;
+	margin-right: 40%;
+	margin-left: 40%;
+}
+.aPayer {
+	background-color: #FFCDD2;
+	color: #C62828;
+	border: 1px solid;
+	margin-right: 40%;
+	margin-left: 40%;
+}
+.butedit a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.butSup a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.butedit {
+	background-color: #388E3C;
+	padding: 0.313em;
+	font-weight: bold;
+	border: 1px solid #000000;
+}
+.butSup {
+	background-color: #C62828;
+	padding: 0.313em;
+	font-weight: bold;
+	border: 1px solid #000000;
+}
+/**********************button solder *********************************/
+.buttonSolder {
+	width: 7%;
+	padding: 0.5%;
+	background-color: #23272a;
+	color: #6495ED;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	margin-top: 1%;
+}
+
+.buttonSolder a {
+	text-decoration: none;
+	color: #6495ed;
+}
+/***************************invitation et gérer dépense******/
+.menuGroupe {
+	color: #ffffff;
+	margin-left: 23%;
+	margin-right: 23%;
+}
+.menuGroupe ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menuGroupe ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 12.5em;
+	height: 2.5em;
+	background-color: #23272a;
+	line-height: 2.5em;
+	text-align: center;
+}
+.menuGroupe ul li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+.menuGroupe ul li a:hover {
+	background-color: #6495ED;
+	opacity: 0.5;
+	color: #000;
+}
+.buttenv {
+	padding: 3px;
+	background-color: #fff;
+	border: none;
+	border-radius: 0.313em;
+}
+.butsuppr {
+	border: 2px solid red;
+	border-radius: 0.313em;
+	padding: 0.313em;
+	cursor: pointer;
+	margin-left: 0.625em;
+	margin-top: 0.313em;
+	color: #fff;
+	background-color: red;
+}
+.butsuppr:hover {
+	color: #000;
+}
+/**************************page acceuil groupe**********************************/
+.accGroupe {
+	background-image: url("../img/groupe.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+.allGr {
+	display: flex;
+	flex-flow: row;
+	margin-top: 1.25em;
+	flex-wrap: wrap;
+}
+.newG {
+	text-align: center;
+	border: 1px solid;
+	border-radius: 0.313em;
+	padding: 0.625em;
+	margin-left: 40%;
+	margin-right: 40%;
+	background-color: #23272a;
+}
+.newG:hover {
+	color: #6495ED;
+}
+.newG a {
+	text-decoration: none;
+	color: #fff;
+}
+.newG a:hover{
+	color: #6495ED;
+}
+.newG i {
+	padding-right: 1.25em;
+}
+.casegroupe {
+	flex-basis: 300px;
+	margin: 0.313em 1.25em;
+	padding: 0.313em 0.625em;
+	border: 1px solid #6495ED;
+	border-radius: 0.313em;
+}
+.casegroupe h4 {
+	margin-top: 0.625em;
+	margin-bottom: 0.625em;
+	text-align: center;
+}
+.casegroupe ul {
+	list-style: none;
+}
+.casegroupe p {
+	text-align: center;
+}
+.groupexxxtitre {
+	list-style: none;
+	text-align: center;
+	color: #fff;
+	border: 0.063em solid #23272a;
+	border-radius: 0.313em;
+	padding: 0.438em;
+	background-color: #23272a;
+}
+.consultergroupe {
+	border: 0.063em solid;
+	border-radius: 0.313em;
+	padding: 0.313em;
+	display: block;
+	margin-top: 0.313em;
+	background-color: #23272a;
+}
+.consultergroupe a {
+	text-decoration: none;
+	color: #fff;
+}
+.consultergroupe a:hover {
+	color: #6495ED;
+}
+.butGrInv {
+	justify-content: space-between;
+	display: flex;
+	margin-top: 0.375em;
+}
+.buttValider {
+	padding: 0.313em;
+	width: 40%;
+	font-weight: bold;
+	border: 0.063em solid #000000;
+	background-color: #388E3C;
+	color: #fff;
+	cursor: pointer;
+}
+.buttValider:hover {
+	background-color: #ffffff;
+	color: #388E3C;
+}
+.buttSupprimer {
+	padding: 0.313em;
+	width: 40%;
+	font-weight: bold;
+	border:  0.063em solid #000000;
+	background-color: #C62828;
+	color: #fff;
+	cursor: pointer;
+}
+.buttSupprimer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.buttSupprimer:hover {
+	background-color: #ffffff;
+	color: #C62828;
+}
+/*************************editergroupe/ajoutergroupe***********************/
+.editerAjouterGr {
+	border: 0.063em solid;
+	border-radius: 0.313em;
+	background-color: #fff;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 10%;
+	padding-bottom: 1.875em;
+}
+.editerG {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 13%;
+	padding-bottom: 0.625em;
+	margin-bottom: 0.625em;
+}
+.caseedit {
+	width: 32%;
+	border: 0.125em solid;
+	border-radius: 0.313em;
+	padding: 1%;
+	margin-bottom: 0.938em;
+}
+.editer {
+	width: 32%;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	border: 0.063em solid;
+	border-radius: 0.313em;
+	font-weight: bold;
+	background-color: #000;
+	color: #fff;
+}
+.editer:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+}
+.editer:active{
+	color: #6495ED;
+}
+/*****************************************Ajouter/editer une dépense******************************************/
+.containerAd {
+	width: 600px;
+	margin: auto;
+	margin-top: 5%;
+	border: 1px solid silver;
+}
+.containerAd input {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.addDep {
+	background-color: #fff;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1.875em;
+	padding-top: 1.875em;
+}
+.addDep h1 {
+	margin-bottom: 1.25em;
+}
+.addDep input {
+	border-radius: 0.313em;
+	border: 0.063em solid black;
+	padding: 0.313em;
+	margin-bottom: 0.313em;
+}
+.butValider {
+	width: 20%;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	border: 0.063em solid;
+	border-radius: 0.313em;
+	font-weight: bold;
+	background-color: #388E3C;
+	color: #ffffff;
+}
+.butValider:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+}
+.butValider:active{
+	color: #6495ED;
+}
+.butRefuser {
+	width: 20%;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
+	border: 0.063em solid;
+	border-radius: 0.313em;
+	font-weight: bold;
+	background-color: #C62828;
+	color: #ffffff;
+}
+.butRefuser:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+}
+.butRefuser:active{
+	color: #6495ED;
+}
+/*********************************************recherche**************************************/
+.titreG {
+	padding: 1.563em;
+	background-color: #F5F5F7;
+}
+.titreR {
+	padding: 1.563em;
+}
+.rechercheBut {
+	border: 0.063em solid #23272a;
+	border-radius: 0.313em;
+}
+.navSearch {
+	border: 0.063em solid #23272a;
+	border-radius: 0.313em;
+}
+.titreR input {
+	height: 1.709em;
+	padding-left: 0.313em;
+	margin-top: 0.625em;
+}
+.rechercheAv input {
+	border: 0.063em solid;
+	border-radius: 0.313em;
+	margin-left: 0.313em;
+}
+.rechercheAv summary {
+	list-style: none;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.rechercheAv summary:hover {
+	color: #6495ED;
+}
+/*****************************************************versement*****************************/
+.buttVald {
+	background-color: green;
+	color: #fff;
+	padding: 0.313em;
+	border-radius: 0.313em;
+	margin-right: 0.313em;
+}
+.buttRef {
+	background-color: red;
+	color: #fff;
+	padding: 0.313em;
+	border-radius: 0.313em;
+}
+/****************************************************scan******************************************/
+.choixFichier {
+	border: 0.063em dashed black;
+	border-radius: 0.313em;
+	padding: 0.938em;
+}
+.titreScan {
+	padding-bottom: 0.313em;
+}
+@media screen and (max-width: 550px) {
+	body {
+		align-items: flex-start;
+	}
+	.table-style {
+		width: 100%;
+		margin: 0em;
+		font-size: 0.625em;
+	}
+	th, td {
+		padding: 0.625em 0.438em;
+	}
+}
